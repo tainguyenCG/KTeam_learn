@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-h2 {
+.heding1 {
   color: red;
   font-family: "Lato", sans-serif;
   font-size: 60px;
@@ -20,7 +20,8 @@ h4 {
 textarea {
   display: block;
 }
-h3 {
+
+#heding2 {
   color: aqua;
   /* Sử dụng tên trong của màu sắc */
 
@@ -47,7 +48,60 @@ h4 {
   background-color: aqua;
 
   text-align: center;
+}
 
-  width: 300px;
-  height: 160px;
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+.content {
+  background-color: palegoldenrod;
+  width: 75%;
+  float: left;
+}
+
+.avatar {
+  width: 25%;
+  background-color: greenyellow;
+  float: left;
+}
+
+.info {
+  background-color: aquamarine;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.date1 {
+  /* vị trí: tĩnh; */
+  color: brown;
+  position: static;
+}
+.date2 {
+  color: blue;
+  /* vị trí: tương đối; */
+  /* di chuyển vị trí của nó xung quanh vị trí ban đầu, lấy vị trí ban đầu làm mốc */
+  position: relative;
+  left: 500px;
+}
+.date3 {
+  color: red;
+  /* vị trí: cố định; */
+  /* nó sẽ cố định nằm trên vị trí vào kéo trang nó vẫn ở đó*/
+  position: fixed;
+  top: 100px;
+  left: 80px;
+}
+.date4 {
+  color: green;
+  /* vị trí: tuyệt đối; */
+  /* lấy góc của phần tử cha có chứa thuộc tính position gần nhất là mốc. */
+  position: absolute;
+  top: 100px;
+  left: 100px;
 }
