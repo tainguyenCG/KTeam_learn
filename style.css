@@ -1,107 +1,115 @@
 * {
-  padding: 0;
-
-  margin: 0;
-
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
-.heding1 {
-  color: red;
+html {
   font-family: "Lato", sans-serif;
-  font-size: 60px;
-  font-weight: 900;
 }
 
-h4 {
-  font-size: 60px;
-  font-weight: 900;
-}
-textarea {
-  display: block;
+h1,
+h2 {
+  color: purple;
 }
 
-#heding2 {
-  color: aqua;
-  /* Sử dụng tên trong của màu sắc */
-
-  color: #00ffff;
-  /* Sử dụng mã màu hexan  */
-
-  color: rgb(0, 255, 255);
-  /* Sử dụng phối màu rgb() red green blue */
-
-  color: rgba(0, 255, 255, 1);
-  /* Tương tự rgb() và thêm 1 thông số là độ mờ trong đó độ mờ nhỏ hơn 1 thì nó mờ, còn 1 là nó bình thường */
-}
-h4 {
-  /* margin: 10px 20px 10px 20px; trên - phải - dưới - trái */
-
-  margin: 20px;
-
-  border: 4px solid red;
-
-  /* padding: 10px 20px 10px 20px; */
-
-  padding: 10px 20px;
-
-  background-color: aqua;
-
+h1 {
+  font-size: 80px;
+  margin-bottom: 15px;
   text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 10px;
 }
 
 .container {
   width: 1140px;
   margin: 0 auto;
-  position: relative;
+  background-color: lavender;
+  padding: 0 30px;
 }
 .content {
-  background-color: palegoldenrod;
   width: 75%;
   float: left;
 }
 
-.avatar {
+form {
   width: 25%;
-  background-color: greenyellow;
   float: left;
 }
 
-.info {
-  background-color: aquamarine;
+.input1,
+.input2,
+textarea {
+  display: block;
 }
 
+.input1 {
+  margin-top: 41px;
+  width: 200px;
+  padding: 10px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+.input2 {
+  margin-left: 35px;
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 200px;
+  margin-left: 35px;
+  padding: 20px;
+}
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
 
-.date1 {
-  /* vị trí: tĩnh; */
-  color: brown;
-  position: static;
+.avatar_image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-left: 55px;
 }
-.date2 {
-  color: blue;
-  /* vị trí: tương đối; */
-  /* di chuyển vị trí của nó xung quanh vị trí ban đầu, lấy vị trí ban đầu làm mốc */
+
+h4 {
+  float: left;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.info {
+  margin-top: 20px;
+  padding-bottom: 40px;
+  margin-left: 55px;
+}
+
+.date {
   position: relative;
-  left: 500px;
+  left: 400px;
+  font-size: 25px;
+  color: blueviolet;
 }
-.date3 {
+
+.link {
   color: red;
-  /* vị trí: cố định; */
-  /* nó sẽ cố định nằm trên vị trí vào kéo trang nó vẫn ở đó*/
-  position: fixed;
-  top: 100px;
-  left: 80px;
-}
-.date4 {
-  color: green;
-  /* vị trí: tuyệt đối; */
-  /* lấy góc của phần tử cha có chứa thuộc tính position gần nhất là mốc. */
+  font-size: 20px;
   position: absolute;
-  top: 100px;
-  left: 100px;
+  padding-top: 300px;
+}
+
+.img_link {
+  margin-left: 200px;
 }
